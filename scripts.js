@@ -1,30 +1,14 @@
 // Grocery List Task 1 
 let item1 = prompt("Grocery item number 1: ");
-let amt1
-do{
-    amt1 = prompt(`How many ${item1} would you like?`);
-    if(isNaN(amt1)){
-        alert(`Please input a number.`)
-    }
-} while(isNaN(amt1) || amt1 === "")
+let amt1 = Number(prompt(`How many ${item1} would you like?`))
+
 
 let item2 = prompt("Grocery item number 2: ");
-let amt2
-do{
-    amt2 = prompt(`How many ${item2} would you like?`);
-    if(isNaN(amt2)){
-        alert(`Please input a number.`)
-    }
-} while(isNaN(amt2) || amt2 === "")
+let amt2 = Number(prompt(`How many ${item2} would you like?`))
+
 
 let item3 = prompt("Grocery item number 3: ");
-let amt3
-do{
-    amt3 = prompt(`How many ${item3} would you like?`);
-    if(isNaN(amt3)){
-        alert(`Please input a number.`)
-    }
-} while(isNaN(amt3) || amt3 === "")
+let amt3 = Number(prompt(`How many ${item1} would you like?`))
 
 let sum = parseInt(amt1) + parseInt(amt2) + parseInt(amt3);
 console.log(`Your shopping cart: 
